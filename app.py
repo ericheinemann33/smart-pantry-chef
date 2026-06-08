@@ -25,7 +25,7 @@ if st.button("Generate Recipe"):
         try:
             # 1. Connect to Gemini
             genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            model = genai.GenerativeModel('gemini-2.5-flash')
             
             # 2. Write the Prompt
             prompt = f"You are an expert chef. Create a tasty, easy-to-follow recipe using mostly these ingredients: {ingredients}. Provide a fun title, a list of ingredients with measurements, and step-by-step instructions."
